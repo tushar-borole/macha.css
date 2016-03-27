@@ -1,0 +1,25 @@
+{
+  "name": "macha.css",
+  "description": "Machofying css animation library",
+  "version": "0.0.0",
+  "authors": [
+    "Tushar Borole <tushariscoolster@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tushariscoolster/backtotop.js"
+  },
+  "homepage": "https://github.com/tushariscoolster/backtotop.js/",
+  "license": "MIT",
+  "main": "macha.css",
+  "keywords": ["macha.css",
+               "animation",
+               "cssanimation","wow","beautifull","amazing"
+  ],
+  "ignore": [
+    "gh-pages",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {}
+}

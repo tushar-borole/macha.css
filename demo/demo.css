@@ -1,10 +1,6 @@
 .mrbean {
     height: 200px;
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    top: 150px;
+    margin: auto;  
 }
 
 .macha-heading {
@@ -13,14 +9,21 @@
     font-size: 80px;
     text-align: center;
 }
+.macha-container{
+    text-align: center;
+    
+}
 .effect-container{
-    margin-top: 210px;
+    margin-top: 20px;
+}
+.hover-class{
+    transition: all .2s ease-in-out; 
+}
+.hover-class:hover{
+    transform: scale(1.1);
 }
 
-.effect-container-single {
-    float: left;
-    margin: 8px;
-}
+
 
 .effect-container-single p {
     margin: 0px;
