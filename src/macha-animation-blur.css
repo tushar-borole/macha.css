@@ -1,0 +1,15 @@
+.macha-animation-blur {
+    animation: blur 3s linear;
+    -webkit-animation: blur 3s linear;
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+    }
+    100% {
+        filter: blur(10px);
+        -webkit-filter: blur(10px);
+    }
+}
