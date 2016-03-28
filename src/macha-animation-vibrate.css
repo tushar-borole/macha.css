@@ -1,0 +1,15 @@
+.macha-animation-vibrate {
+    animation: vibrate 0.1s linear 0s infinite;
+    -moz-animation: vibrate 0.1s linear 0s infinite;
+    -webkit-animation: vibrate 0.1s linear 0s infinite;
+    -o-animation: vibrate 0.1s linear 0s infinite;
+}
+
+@keyframes vibrate {
+    50% {
+        transform: rotate(1deg) translateX(1px);
+    }
+    100% {
+        transform: rotate(-1deg) translateX(-1px);
+    }
+}

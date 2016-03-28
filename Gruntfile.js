@@ -3,8 +3,7 @@
 /* jshint camelcase: false */
 
 
-module.exports = function (grunt)
-{
+module.exports = function (grunt) {
     // Load grunt tasks automatically
     require('load-grunt-tasks')(grunt);
 
@@ -23,7 +22,7 @@ module.exports = function (grunt)
         appConfig: appConfig,
         bump: {
             options: {
-                files: ['bower.json','package.json'],
+                files: ['bower.json', 'package.json'],
                 updateConfigs: [],
                 commit: true,
                 commitMessage: 'Release v%VERSION%',
@@ -40,6 +39,12 @@ module.exports = function (grunt)
                 gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d',
                 globalReplace: false
             }
+        },
+        concat: {
+            dist: {
+                src: ['src/*.css', ],
+                dest: 'macha.css',
+            },
         }
     });
 
@@ -47,10 +52,15 @@ module.exports = function (grunt)
 
 
 
-    grunt.registerTask('release', function (target)
-    {
+    grunt.registerTask('release', function (target) {
         grunt.task.run([
             'bump'
+        ]);
+    });
+
+    grunt.registerTask('build', function (target) {
+        grunt.task.run([
+            'concat'
         ]);
     });
 
