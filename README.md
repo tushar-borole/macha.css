@@ -32,10 +32,10 @@ Have a look at the [DEMO](http://tushariscoolster.github.io/macha.css/)
 
 If you want to build a custom css ie only want to include the animation you want. you can follow below procesure
 
-1:) git clone https://github.com/tushariscoolster/macha.css
-2:) npm install
-3:) keep the wantedd animation in animation.json, and delete the rest of the animation
-4:) build
+1. git clone https://github.com/tushariscoolster/macha.css
+2. npm install
+3. keep the wantedd animation in animation.json, and delete the rest of the animation
+4. build
 
 ```sh
 grunt build
