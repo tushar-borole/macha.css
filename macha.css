@@ -1,3 +1,18 @@
+.macha-animation-blur {
+    animation: blur 3s linear;
+    -webkit-animation: blur 3s linear;
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+    }
+    100% {
+        filter: blur(10px);
+        -webkit-filter: blur(10px);
+    }
+}
 .macha-animation-bouncingball {
    -webkit-animation: bounce 800ms ease-out;
 	-moz-animation: bounce 800ms ease-out;
@@ -212,6 +227,45 @@
     opacity: 1;
   }
 }
+.macha-animation-fall {
+    -webkit-animation-name: fall;
+    animation-name: fall;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    transition: transform 1s linear;
+    transform-origin: bottom right;
+    transform-style: preserve-3D;
+}
+
+
+@keyframes fall {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(90deg);
+    }
+    40% {
+        transform: rotate(70deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+     60% {
+        transform: rotate(80deg);
+    }
+     70% {
+        transform: rotate(90deg);
+    }
+     80% {
+        transform: rotate(85deg);
+    }
+     100% {
+        transform: rotate(90deg);
+    }
+}
 .macha-animation-shake {
     animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
     transform: translate3d(0, 0, 0);
@@ -239,6 +293,7 @@
         transform: translate3d(4px, 0, 0);
     }
 }
+
 
 .macha-animation-vibrate {
     animation: vibrate 0.1s linear 0s infinite;
