@@ -1,4 +1,4 @@
-<img src="logo.png" width="150"></br>
+<img src="logo.png" width="400"></br>
 
 Machofying css animation and hover effects
 
