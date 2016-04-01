@@ -54,6 +54,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('release', function (target) {
         grunt.task.run([
+            'concat',
             'bump'
         ]);
     });
