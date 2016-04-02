@@ -1,0 +1,59 @@
+.macha-animation-rolljump {
+  -webkit-animation-name: rolljump;
+  animation-name: rolljump;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  }
+  @-webkit-keyframes rolljump {
+  0% {
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: rotate3d(0, 0, 1, -200deg);
+  transform: rotate3d(0, 0, 1, -200deg);
+  opacity: 0;
+  }
+  100% {
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: none;
+  transform: none;
+  opacity: 1;
+  }
+  }
+  @keyframes rolljump {
+      0% {
+          -webkit-transform: translateY(0);
+  transform: translateY(0);
+      }
+      
+      20%{
+         -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);  
+      }
+       40%{
+       -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: rotate3d(0, 0, 1, -360deg);
+  transform: rotate3d(0, 0, 1, -360deg);
+      }
+      80%{
+          -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: none;
+  transform: none;
+      }
+/*  0% {
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: rotate3d(0, 0, 1, -200deg);
+  transform: rotate3d(0, 0, 1, -200deg);
+  opacity: 0;
+  }
+  100% {
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: none;
+  transform: none;
+  opacity: 1;
+  }*/
+  } 
